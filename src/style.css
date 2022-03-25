@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 48;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 17px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 17px;
+    transition: 0.4s;
+}
+
+.search-icon {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.search-box input {
+    display: block;
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 17px;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.search-box:focus-within {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.result {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.result {
+    width: 100%;
+    margin-bottom: 17px;
+    padding: 17px;
+    background-color: black;
+    border-radius: 16px;
+    transition: 0.4s;
+}
+
+.result:hover {
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.result h3 {
+    color: #888;
+    font-size: 30px;
+    margin-bottom: 17px;
+}
+
+.result p {
+    color: #313131;
+    font-size: 21px;
+    margin-bottom: 17px;
+}
+
+.result p .searchmatch {
+    font-weight: 700;
+    color: rebeccapurple
+}
+
+.result a {
+    display: inline-block;
+    padding: 12px 17px;
+    background: #A84FFF;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.result a:hover {
+    background-color: #e73c7e;
+}
