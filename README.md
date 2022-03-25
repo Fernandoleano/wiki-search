@@ -1,3 +1,8 @@
+This is a wiki search app I made from scratch with react and fetch api here is the api: https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=21&srsearch=${search}
+
+![image](https://user-images.githubusercontent.com/68082556/160040140-99f86110-f09f-486c-8aa1-64af21805183.png)
+![image](https://user-images.githubusercontent.com/68082556/160040181-d527ca32-f43b-42d3-bf43-52b308443be6.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
